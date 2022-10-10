@@ -1,5 +1,7 @@
 let color =  'black'
 
+
+
 function setBoard(size){
     let board = document.querySelector(".board")
     let squares = board.querySelectorAll('div')
@@ -38,4 +40,10 @@ function colorScquare(){
 
 function colorCh(choice){
     color = choice;
+}
+
+function reset(){
+    let board = document.querySelector(".board");
+    let squares = board.querySelectorAll("div")
+    squares.forEach((div) => div.style.backgroundColor ='white');
 }
