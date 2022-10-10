@@ -1,7 +1,5 @@
 let color =  'black'
 
-
-
 function setBoard(size){
     let board = document.querySelector(".board")
     let squares = board.querySelectorAll('div')
