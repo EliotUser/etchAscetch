@@ -12,14 +12,17 @@
     <div class="flex-container">
         <div class="title"><h1>Draw Pad</h1></div>
         <div class="content">
-            <div class="board"></div>
-            <div class="buttons">
-                <button>Black</button>
-                <button>White</button>
-                <button>Random</button>
-                <button>Reset</button>
+            <div class ="box">
+            <div class="board">
             </div>
-            <div>
+            </div>
+            <div class="buttons">
+                <button onclick="colorCh('black')">Black</button>
+                <button onclick="colorCh('white')">Erase</button>
+                <button onclick="colorCh('random')">Random</button>
+                <button onclick="reset()">Reset</button>
+            </div>
+            <div class="input" >
                 <input type="text" placeholder="Board Size" value="16" onchange="changeSize(this.value)"/>
                 <button>Set Size</button>
             </div>
